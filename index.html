@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-
       *{
         margin:0;
       }
       body{
-        background:yellow;
+        background:#FCFF6D;
+        font-size:20px;
       }
       main{
         display:flex;
@@ -31,19 +32,38 @@
         min-height:100vh;
         flex-direction:column;
         max-width:100%;
+        /* vertical-align: middle; */
       }
       header h1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
         background:black;
         max-width:100%;
         width:900px;
         color:yellow;
         text-align:center;
+        height:75px;
       }
       .box{
         display:flex;
         justify-content:center;
         align-items:center;
         max-width:100%;
+        width:900px;
+        flex-direction:column;
+      }
+      .anotation{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:yellow;
+        text-shadow:black 1px 1px 1px, yellow -1px -1px 2px, black 2px 2px 2px;
+        font-size:20px;
+        width:900px;
+        max-width:100%;
+        min-height:75px;
+        background: yellow;
       }
       </style>
   </head>
@@ -52,11 +72,27 @@
       <article>
         <header>
           <h1>Веб мастерская имени барона сайтоверстаузена</h1>
-          <p>Лучшие сайты во все времена!</p>
+          <p class='anotation'>Annotation and текст для подтсановки! сайты на JS</p>
           <div>Buttony</div>
         </header>
         <div class="box">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Галерея на JS под все движки
+
+  <p>В теории gallery JS успешно полетит на абсолютно всех движках. Испытания проводились успешно ставить галерею  на вордпрессе. Видимо с другими движками больших проблем по установки тоже не будет. Потому что для редактирования любой информации в текстовом формате, достаточно подключить независимый файл JS, style. Или записать их прямо в текстовом поле в wordpress для этого предусмотрен виджет “вставка html”. В любом случае вставить скрипт и стили можно как с помощью подключения со внешней стороны, так и напрямую написав скрипт в страницу.</p>
+  <picture>
+    <img src='https://nasobe.ru/images/CPANCH/DRUG.JPG' alt='Скрипт легкой галереи на js' style='max-width:100%;'>
+  </picture>
+  <a href='https://nasobe.ru/blozhik/blog.php?JS-Gallery#spanchBob-FrenD'>Gallery JS</a>
+  <p>Преимущества этой галерии: простая понятная всем техника на яваскрипте и взаимодействует со стайлом в реальном времени, а сами фотографии подключаются форматом json. Т.о.: JSON хранит в себе пути на файлы, которые могут быть подключены, даже со сторонних источников.</p>
+
+  <p>Звучит просто невероятно! Хотя в реальной жизни нельзя просто так взять фотографию с яндекс диска или из фотобанка “лори” и установить ссылку на неё. В любом случае фотографии можно разместить на сервере с которого будет работать движок и яваскрипт беспроблемно прошарит пути на изображения. Например с гугл фото ссылка работает по передачи через json <a href=’https://nasobe.ru/blozhik/blog.php?JS-Gallery#test’>Фото с гулФото</a> Открывается на десктопе, на мобильных устройства нет.</p>
+
+  <h2>Серьезно HTML coder? Галерея на древней технике html,css,js. А не пора ли вам на пенсию?</h2>
+  <p>Но как говорят многие недоумевающие очевидцы: Существует же модульная система теги html5, css3 со всякими библиотеками, бутстрапами, фреймворками. Современные технологии, которые современней чем завтрашний день! Но тут все по старому: скрипт взаимодействует через тег пикчер к самому имейдж, установкой альта, тайтла и возможности модифицировать подстановку изображения под условия показа с супер легким форматом WEBP! И все это напрямую через один лишь скрипт взаимодействующий с семантическими тегами, по названию самого тега прямо сейчас. (и это далеко не бутстрап, потому что на бутстрапе такого сделать нельзя).</p>
+
+  <h2>И вот в чем SUPER преимущества:</h2>
+  <p>Написать такую галерею сможет даже школьник. Или даже не школьник! Даже полнейший улыбан, зафиксированный в точнейшую классификацию как полный человек дождя! И “полный” может быть сразу в трех законченных смыслах, одновременно и сразу. Таким образом по математической формуле среднего значения перевес будет в сторону: что это более как возможно! А древние технологии работают по быстрее чем подключенная библиотека и получается невероятная скорость, +экономия на серверных ресурсах, потому что скрипт выполняется без бэкенда на стороне устройства.</p> <span style='background:black;color:yellow;width:900px;max-width:100%;font-size:37px;text-align:center;text-shadow:1px 1px 1px white;'>Ибо это яваскрипт. О_о!</span>
+
         </div>
       </article>
       </main>
