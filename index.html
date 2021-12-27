@@ -47,6 +47,14 @@
         min-height:75px;
         flex-direction:column;
       }
+      @media(max-width:300px){
+        header h1{
+          vertical-align: middle;
+        }
+        .font-sizeH1{
+        font-size:17px;
+        }
+      }
       .box{
         display:flex;
         justify-content:center;
@@ -76,7 +84,7 @@
         <header>
           <h1>
             <img itemprop="logo" src="images/logo.png" alt="веб мастерская имени Барона Сайтоверстаузена" style="max-width:75px; float:right;margin-right:5%;">
-            <p style='display:flex;flex-direction:column;'><span style='font-size:37px;'>Веб мастерская</span><span style='font-size:18px;'>имени Барона Сайтоверстаузена ;-D</span></p>
+            <p style='display:flex;flex-direction:column;'><span class='font-sizeH1'>Веб мастерская</span><span style='font-size:18px;'>имени Барона Сайтоверстаузена</span></p>
           </h1>
           <p class='anotation'>Annotation and текст для подтсановки! сайты на JS <span style='color:black;'>&nbsp;(JavaScript)</span></p>
           <div>Buttony</div>
