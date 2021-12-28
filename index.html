@@ -35,17 +35,50 @@
         max-width:100%;
         vertical-align: middle;
       }
-      header h1{
+      .boxMenu{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction:column;
+        max-width:100%;
+        vertical-align: middle;
+      }
+      .boxMenu nav{
+        display:flex;
+        justify-content:space-around;
+        background: white;
+        align-items: center;
+        width:calc(900px - 6px);
+        max-width: calc(100% - 6px);
+        border: 1px solid black;
+        height:25px;
+        font-size: 15px;
+      }
+      header .boxMenu h1{
         /* display:flex;
         justify-content: center;
         align-items: center; */
+        margin:15px;
         background:black;
         max-width:100%;
         width:900px;
         color:yellow;
         text-align:center;
+        vertical-align: middle;
         min-height:75px;
         flex-direction:column;
+      }
+      .ButtonBox{
+        display:flex;
+        background: rgb(255,235,0);
+        justify-content: center;
+        align-items: center;
+        width:100px;
+        height:35px;
+        max-width:100%;
+      }
+      .ButtonBox:hover{
+        background: violet;
       }
       @media(max-width:300px){
         header h1{
@@ -84,151 +117,206 @@
         flex-direction:column;
       }
       .wrapper {
-  display: grid;
-  max-width: 100%;
-  width:900px;
-  grid-template-columns: repeat(9, 1fr);
-  grid-gap: 0px;
-  grid-auto-rows: 190px;
-  grid-template-areas:
-    "a a b b b c c c c"
-    "d d d e e e e f f"
-    "g g k k k k m m m";
-}
-  .wrapper a{
-    text-decoration: none;
-  }
+        display: grid;
+        max-width: 100%;
+        width:900px;
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: 0px;
+        grid-auto-rows: 190px;
+        grid-template-areas:
+          "a a b b b c c c c"
+          "d d d e e e e f f"
+          "g g k k k k m m m";
+      }
+        .wrapper a{
+          text-decoration: none;
+        }
 
-.item1 {
-  grid-area: a;
-  background: #ffa6ff;
-  border: 3px solid #ffa6ff;
-}
-.item1:hover{
-  background: green;
-  border: 3px solid red;
-}
-.item2 {
-  grid-area: b;
-text-align: center;
-  background: violet;
-  /* border-radius: 10px; */
-  border: 3px solid violet;
-}
-.item2:hover{
-  background: coral;
-  border: 3px solid green;
-}
-.item3 {
-  grid-area: c;
-text-align: center;
-  background: #ffa6ff;
-  /* width:300px; */
-  max-width: 100%;
-  /* border-radius: 10px; */
-  border: 3px solid  #ffa6ff;
-}
-.item3:hover{
-  background: lime;
-  border: 3px solid coral;
-}
-.item4 {
-  grid-area: d;
-  align-items: center;
-  background: #db9bdb;
-  /* border-radius: 10px; */
-  border: 3px solid #db9bdb;
-}
-.item4:hover{
-  background: lightgreen;
-  border: 3px solid coral;
-}
-.item5{
-  grid-area:e;
-  align-items:center;
-  background: #ff7bff;
-  /* border-radius: 10px; */
-  border: 3px solid #ff7bff;
-}
-.item5:hover{
-  background: lightgreen;
-  border: 3px solid green;
-}
-.item6{
-  grid-area:f;
-  align-items: center;
-  background:#db9bdb;
-  /* border-radius: 10px; */
-  border: 3px solid #db9bd;
-}
-.item6:hover{
-  background: darkorange;
-  border: 3px solid yellow;
-}
-.item7{
-  grid-area:g;
-  align-items: center;
-  background:#ff7bff;
-  /* border-radius: 10px; */
-  border: 3px solid #ff7bff;
-}
-.item7:hover{
-  background: red;
-  border: 3px solid green;
-}
-.item8{
-  grid-area:k;
-  align-items:center;
-  background:#db9bdb;
-  /* border-radius: 10px; */
-  border: 3px solid #db9bdb;
-}
-.item8:hover{
-  background: blue;
-  border: 3px solid green;
-}
-.item9{
-  grid-area:m;
-  align-items:center;
-  background:#ff7bff;
-  /* border-radius: 10px; */
-  border: 3px solid #ff7bff;
-}
-.item9:hover{
-  background: cyan;
-  border: 3px solid green;
-}
-img{
-  max-width: 100%;
-}
+      .item1 {
+        grid-area: a;
+        background: #ffa6ff;
+        border: 3px solid #ffa6ff;
+      }
+      .item1:hover{
+        background: green;
+        border: 3px solid red;
+      }
+      .item2 {
+        grid-area: b;
+      text-align: center;
+        background: violet;
+        /* border-radius: 10px; */
+        border: 3px solid violet;
+      }
+      .item2:hover{
+        background: coral;
+        border: 3px solid green;
+      }
+      .item3 {
+        grid-area: c;
+      text-align: center;
+        background: #ffa6ff;
+        /* width:300px; */
+        max-width: 100%;
+        /* border-radius: 10px; */
+        border: 3px solid  #ffa6ff;
+      }
+      .item3:hover{
+        background: lime;
+        border: 3px solid coral;
+      }
+      .item4 {
+        grid-area: d;
+        align-items: center;
+        background: #db9bdb;
+        /* border-radius: 10px; */
+        border: 3px solid #db9bdb;
+      }
+      .item4:hover{
+        background: lightgreen;
+        border: 3px solid coral;
+      }
+      .item5{
+        grid-area:e;
+        align-items:center;
+        background: #ff7bff;
+        /* border-radius: 10px; */
+        border: 3px solid #ff7bff;
+      }
+      .item5:hover{
+        background: lightgreen;
+        border: 3px solid green;
+      }
+      .item6{
+        grid-area:f;
+        align-items: center;
+        background:#db9bdb;
+        /* border-radius: 10px; */
+        border: 3px solid #db9bd;
+      }
+      .item6:hover{
+        background: darkorange;
+        border: 3px solid yellow;
+      }
+      .item7{
+        grid-area:g;
+        align-items: center;
+        background:#ff7bff;
+        /* border-radius: 10px; */
+        border: 3px solid #ff7bff;
+      }
+      .item7:hover{
+        background: red;
+        border: 3px solid green;
+      }
+      .item8{
+        grid-area:k;
+        align-items:center;
+        background:#db9bdb;
+        /* border-radius: 10px; */
+        border: 3px solid #db9bdb;
+      }
+      .item8:hover{
+        background: blue;
+        border: 3px solid green;
+      }
+      .item9{
+        grid-area:m;
+        align-items:center;
+        background:#ff7bff;
+        /* border-radius: 10px; */
+        border: 3px solid #ff7bff;
+      }
+      .item9:hover{
+        background: cyan;
+        border: 3px solid green;
+      }
+      img{
+        max-width: 100%;
+      }
+      .social_network_buttons{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        height: 50px;
+        width:900px;
+        max-width:100%;
+      }
+      .social_network_buttons img{
+        width:45px;
+        opacity:0.3;
+      }
+      .social_network_buttons img:hover{
+          width:175px;
+          transition:3s;
+          opacity:1;
+      }
       </style>
   </head>
   <body>
     <main>
       <article>
         <header>
+          <div class='boxMenu'>
+            <nav><span class="ButtonBox">Контекстка</span><span class="ButtonBox">Примеры</span><span class="ButtonBox">html coder</span></nav>
           <h1>
             <img itemprop="logo" src="images/logo.png" alt="веб мастерская имени Барона Сайтоверстаузена" style="max-width:75px; float:right;margin-right:5%;">
             <p style='display:flex;flex-direction:column;'><span class='font-sizeH1'>Веб мастерская</span><span style='font-size:18px;'>имени Барона Сайтоверстаузена</span></p>
           </h1>
+        </div>
           <p class='anotation'><span style='width:500px;max-width:100%;'>Annotation and текст для подтсановки мультилендингов! Сайты на JS <span style='color:black;text-shadow:violet 1px 1px 2px;'>&nbsp;(JavaScript)</span></span></p>
-          <div>Buttony</div>
+          <div class="social_network_buttons">
+                <span id="oki"></span>
+                <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script> -->
+                <a href="https://www.linkedin.com/in/amir-navrutdinov-76374a119" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/Linkedin.png" alt="linkedin"></a>
+                <a href="https://vk.com/veb_verstalshiki" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/vk.png" alt="VK"></a>
+                <a href="https://ok.ru/group/57374956912777" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/ok.png" alt="одноклассники"></a>
+                <a href="https://www.facebook.com/groups/nasoberu" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/facebook.png" alt="facebook"></a>
+                <a href="https://chat.whatsapp.com/KrsudYJi5e1HXdFeLFgTYX" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/watsap.png" alt="whatsapp"></a>
+                <a href="https://nasobe.ru/feedback-form.html"><img id="d" src="https://nasobe.ru/images/icon/mail.png"  alt="mail"></a>
+                <a href="https://www.instagram.com/nasobe.ru/" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/inst.png" alt="instagram"></a>
+                <a href="https://tlgg.ru/chikchicly" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/telegram.png" title="Телега!" alt="telegram"></a>
+                <a href="https://ru.stackoverflow.com/users/306561/amir-shikarno?tab=profile" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/stackoverflow3.png" title="Stackoverflow" alt="stackoverflow"></a>
+          </div>
+          <script>
+          document.querySelector('.social_network_buttons').addEventListener("mousemove",()=>{
+            console.log('hover');
+            document.querySelector('#oki').style.cssText=`
+            position:absolute;
+            background:yellow;
+            height:10px;
+            width:100%;
+            transition:3s;
+            `;
+          });
+          document.querySelector('.social_network_buttons').addEventListener("mouseout",()=>{
+            console.log('over');
+            document.querySelector('#oki').style.cssText=`
+            position:absolute;
+            background:rgba(0,0,0,0);
+            height:0px;
+            width:0%;
+            transition:3s;
+            `;
+          });
+          </script>
         </header>
 
         <div class="box">
           <h2>Примеры сайтов</h2>
           <div class="wrapper">
-            <div class="item1"><a href='#'><span style='display:grid; height:190px;font-size:53px; align-items:center; justify-content:center;'>👍<p style='font-size:20px;'>super landing page</p></span></a></div>
+            <div class="item1"><a href='#'><span style='display:grid; height:190px;font-size:53px; align-items:center; justify-content:center;break-word;word-break: break-all;'>👍<p style='font-size:20px;'>super landing page</p></span></a></div>
             <div class="item2"><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>✊<p style='font-size:18px;'>Камень, ножницы, бумага.</p></span></a></div>
-            <div class="item3"><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>❌⭕<p style='font-size:18px;'>Крестики нолики.</p></span></a></div>
+            <div class="item3"><a href='#'><span style='display:grid; height:190px;font-size:53px; align-items:center; justify-content:center;'>❌⭕<p style='font-size:18px;'>Крестики нолики.</p></span></a></div>
             <div class="item4"><a href='#'><span style='display:grid; height:190px;font-size:73px; align-items:center; justify-content:center;'>📷<p style='font-size:18px;'>Gallery JS</p></span></a></div>
             <div class='item5'><a href='#'><span style='display:grid; height:190px;font-size:84px; align-items:center; justify-content:center;'>👌<p style='font-size:18px;'>Цена лендинга</p></span></a></div>
-            <div class='item6'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-items:center;'>👽<p style='font-size:11px; text-align:center;'>Пример лендинга с "интерсекшин обсервер".</p></span></a></div>
-            <div class='item7'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-items:center;'>🗝<p style='font-size:18px;text-align:center;'>SEO основные принципы</p></span></a></div>
+            <div class='item6'><a href='#'><span style='display:grid; height:190px;font-size:50px; align-items:center; justify-items:center;word-wrap: break-word;word-break: break-all;'>👽<p style='font-size:11px; text-align:center;'>Пример лендинга с "интерсекшин обсервер".</p></span></a></div>
+            <div class='item7'><a href='#'><span style='display:grid; height:190px;font-size:50px; align-items:center; justify-items:center;break-word;word-break: break-all;'>🗝<p style='font-size:18px;text-align:center;'>SEO основные принципы</p></span></a></div>
             <div class='item8'><a href='#'><span style='display:grid; height:190px;font-size:74px; align-items:center; justify-content:center;justify-items:center;'>📐‍<p style='font-size:18px;text-align:center;'>Лендинг по макету из фигмы</p></span></a></div>
             <div class='item9'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>🛠<p style='font-size:18px;'>Good Geal</p></span></a></div>
           </div>
-
+          <span style='background:black; color:yellow;border:1px solid red;border-radius:10px;'><p style='margin:15px;'><span style="color:red;">псс...P.S.</span> И ещё верстка адаптивного мульти лендинга 💻 с поисковой оптимизацией, ➕турбо прибамбасами и <span style="color:green;">СЕО</span>приводом!📲</p></span>
             <!-- <div class='boxGrid' style='background:violet;'>3</div>
             <div class='boxGrid' style='background:#f5b6f5;'>4</div>
             <div class='boxGrid' style='background:#FAFBD6;'></div>
