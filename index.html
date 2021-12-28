@@ -91,57 +91,108 @@
   grid-gap: 0px;
   grid-auto-rows: 190px;
   grid-template-areas:
-    "a a a b b b c c c"
+    "a a a b b c c c c"
     "d d d e e e e f f"
     "g g k k k k m m m";
 }
 .item1 {
   grid-area: a;
+  background: #ffa6ff;
+  border: 3px solid #ffa6ff;
+}
+.item1:hover{
   background: green;
-  border-radius: 10px;
-  border: 3px solid black;
+  border: 3px solid red;
 }
 .item2 {
   grid-area: b;
-  align-items: start;
-  background: red;
+text-align: center;
+  background: violet;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item2:hover{
+  background: coral;
+  border: 3px solid green;
 }
 .item3 {
   grid-area: c;
-  align-items: center;
-  background: orange;
+text-align: center;
+  background: #ffa6ff;
   /* width:300px; */
   max-width: 100%;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item3:hover{
+  background: lime;
+  border: 3px solid coral;
 }
 .item4 {
   grid-area: d;
   align-items: center;
-  background: blue;
+  background: #db9bdb;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item4:hover{
+  background: lightgreen;
+  border: 3px solid coral;
 }
 .item5{
   grid-area:e;
   align-items:center;
-  background: violet;
+  background: #ff7bff;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item5:hover{
+  background: lightgreen;
+  border: 3px solid green;
 }
 .item6{
   grid-area:f;
   align-items: center;
-  background:green;
+  background:#db9bdb;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item6:hover{
+  background: darkorange;
+  border: 3px solid yellow;
 }
 .item7{
   grid-area:g;
   align-items: center;
-  background:coral;
+  background:#ff7bff;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item7:hover{
+  background: red;
+  border: 3px solid green;
 }
 .item8{
   grid-area:k;
   align-items:center;
-  background:cyan;
+  background:#db9bdb;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item8:hover{
+  background: blue;
+  border: 3px solid green;
 }
 .item9{
   grid-area:m;
   align-items:center;
-  background:white;
+  background:#ff7bff;
+  /* border-radius: 10px; */
+  border: 3px solid violet;
+}
+.item9:hover{
+  background: cyan;
+  border: 3px solid green;
 }
 img{
   max-width: 100%;
@@ -163,15 +214,15 @@ img{
         <div class="box">
           <h2>Примеры сайтов</h2>
           <div class="wrapper">
-            <div class="item1">Item 1</div>
-            <div class="item2">Item 2</div>
-            <div class="item3">Item 3</div>
-            <div class="item4">Item 4</div>
-            <div class='item5'>Item 5</div>
-            <div class='item6'>Item 6</div>
-            <div class='item7'>itm 7</div>
-            <div class='item8'>Item 8</div>
-            <div class='item9'>item 9</div>
+            <div class="item1"><a href='#'><span style='display:grid; height:190px;font-size:73px; align-items:center; justify-content:center;'>👍<p style='font-size:18px;'>super landing</p></span></a></div>
+            <div class="item2"><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>✊<p style='font-size:18px;'>Камень, ножницы, бумага.</p></span></a></div>
+            <div class="item3"><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>❌⭕<p style='font-size:18px;'>Крестики нолики.</p></span></a></div>
+            <div class="item4"><a href='#'><span style='display:grid; height:190px;font-size:73px; align-items:center; justify-content:center;'>📷<p style='font-size:18px;'>Gallery JS</p></span></a></div>
+            <div class='item5'><a href='#'><span style='display:grid; height:190px;font-size:74px; align-items:center; justify-content:center;'>👌<p style='font-size:18px;'>Цена лендинга</p></span></a></div>
+            <div class='item6'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-items:center;'>👽<p style='font-size:11px;'>Пример лендинга с "интерсекшин обсервер".</p></span></a></div>
+            <div class='item7'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-items:center;'>🗝<p style='font-size:18px;text-align:center;'>SEO основные принципы</p></span></a></div>
+            <div class='item8'><a href='#'><span style='display:grid; height:190px;font-size:74px; align-items:center; justify-content:center;justify-items:center;'>📐‍<p style='font-size:18px;text-align:center;'>Лендинг по макету из фигмы</p></span></a></div>
+            <div class='item9'><a href='#'><span style='display:grid; height:190px;font-size:54px; align-items:center; justify-content:center;'>🛠<p style='font-size:18px;'>Good Geal</p></span></a></div>
           </div>
 
             <!-- <div class='boxGrid' style='background:violet;'>3</div>
