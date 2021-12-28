@@ -33,7 +33,7 @@
         min-height:100vh;
         flex-direction:column;
         max-width:100%;
-        /* vertical-align: middle; */
+        vertical-align: middle;
       }
       header h1{
         /* display:flex;
@@ -83,14 +83,69 @@
         background: yellow;
         flex-direction:column;
       }
-      .boxGrid{
-        display:grid;
-        justify-content: center;
-        align-items: center;
-        width:300px;
-        height:300px;
-
-      }
+      .wrapper {
+  display: grid;
+  max-width: 100%;
+  width:900px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: 190px;
+  grid-template-areas:
+    "a a a b b b c c c"
+    "d d d e e e e f f"
+    "g g k k k k m m m";
+}
+.item1 {
+  grid-area: a;
+  background: green;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.item2 {
+  grid-area: b;
+  align-items: start;
+  background: red;
+}
+.item3 {
+  grid-area: c;
+  align-items: center;
+  background: orange;
+  /* width:300px; */
+  max-width: 100%;
+}
+.item4 {
+  grid-area: d;
+  align-items: center;
+  background: blue;
+}
+.item5{
+  grid-area:e;
+  align-items:center;
+  background: violet;
+}
+.item6{
+  grid-area:f;
+  align-items: center;
+  background:green;
+}
+.item7{
+  grid-area:g;
+  align-items: center;
+  background:coral;
+}
+.item8{
+  grid-area:k;
+  align-items:center;
+  background:cyan;
+}
+.item9{
+  grid-area:m;
+  align-items:center;
+  background:white;
+}
+img{
+  max-width: 100%;
+}
       </style>
   </head>
   <body>
@@ -101,22 +156,33 @@
             <img itemprop="logo" src="images/logo.png" alt="веб мастерская имени Барона Сайтоверстаузена" style="max-width:75px; float:right;margin-right:5%;">
             <p style='display:flex;flex-direction:column;'><span class='font-sizeH1'>Веб мастерская</span><span style='font-size:18px;'>имени Барона Сайтоверстаузена</span></p>
           </h1>
-          <p class='anotation'><span style='width:500px;'>Annotation and текст для подтсановки мультилендингов! Сайты на JS <span style='color:black;text-shadow:violet 1px 1px 2px;'>&nbsp;(JavaScript)</span></span></p>
+          <p class='anotation'><span style='width:500px;max-width:100%;'>Annotation and текст для подтсановки мультилендингов! Сайты на JS <span style='color:black;text-shadow:violet 1px 1px 2px;'>&nbsp;(JavaScript)</span></span></p>
           <div>Buttony</div>
         </header>
+
         <div class="box">
-          Галерея на JS под все движки
           <h2>Примеры сайтов</h2>
-          <!-- <div class='grid'> -->
-            <div class='boxGrid' style='background:violet;'></div>
-            <div class='boxGrid' style='background:#f5b6f5;'></div>
+          <div class="wrapper">
+            <div class="item1">Item 1</div>
+            <div class="item2">Item 2</div>
+            <div class="item3">Item 3</div>
+            <div class="item4">Item 4</div>
+            <div class='item5'>Item 5</div>
+            <div class='item6'>Item 6</div>
+            <div class='item7'>itm 7</div>
+            <div class='item8'>Item 8</div>
+            <div class='item9'>item 9</div>
+          </div>
+
+            <!-- <div class='boxGrid' style='background:violet;'>3</div>
+            <div class='boxGrid' style='background:#f5b6f5;'>4</div>
             <div class='boxGrid' style='background:#FAFBD6;'></div>
             <div class='boxGrid' style='background:violet;'></div>
             <div class='boxGrid' style='background:#f5b6f5;'></div>
             <div class='boxGrid' style='background:#FAFBD6;'></div>
             <div class='boxGrid' style='background:violet;'></div>
             <div class='boxGrid' style='background:#f5b6f5;'></div>
-            <div class='boxGrid' style='background:#FAFBD6;'></div>
+            <div class='boxGrid' style='background:#FAFBD6;'></div> -->
           <!-- </div> -->
   <p>В теории gallery JS успешно полетит на абсолютно всех движках. Испытания проводились успешно ставить галерею  на вордпрессе. Видимо с другими движками больших проблем по установки тоже не будет. Потому что для редактирования любой информации в текстовом формате, достаточно подключить независимый файл JS, style. Или записать их прямо в текстовом поле в wordpress для этого предусмотрен виджет “вставка html”. В любом случае вставить скрипт и стили можно как с помощью подключения со внешней стороны, так и напрямую написав скрипт в страницу.</p>
   <picture>
