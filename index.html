@@ -267,7 +267,7 @@
         </div>
           <p class='anotation'><span style='width:500px;max-width:100%;'>Annotation and текст для подтсановки мультилендингов! Сайты на JS <span style='color:black;text-shadow:violet 1px 1px 2px;'>&nbsp;(JavaScript)</span></span></p>
           <div class="social_network_buttons">
-                <span id="oki"></span>
+                <span id="oki" style="height:0;width:0;"></span>
                 <!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async="" defer=""></script> -->
                 <a href="https://www.linkedin.com/in/amir-navrutdinov-76374a119" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/Linkedin.png" alt="linkedin"></a>
                 <a href="https://vk.com/veb_verstalshiki" target="_blank"><img id="d" src="https://nasobe.ru/images/icon/vk.png" alt="VK"></a>
@@ -281,17 +281,15 @@
           </div>
           <script>
           document.querySelector('.social_network_buttons').addEventListener("mousemove",()=>{
-            console.log('hover');
             document.querySelector('#oki').style.cssText=`
             position:absolute;
             background:yellow;
-            height:10px;
+            height:25px;
             width:100%;
             transition:3s;
             `;
           });
           document.querySelector('.social_network_buttons').addEventListener("mouseout",()=>{
-            console.log('over');
             document.querySelector('#oki').style.cssText=`
             position:absolute;
             background:rgba(0,0,0,0);
