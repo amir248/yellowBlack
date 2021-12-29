@@ -342,6 +342,49 @@
   <p>Написать такую галерею сможет даже школьник. Или даже не школьник! Даже полнейший улыбан, зафиксированный в точнейшую классификацию как полный человек дождя! И “полный” может быть сразу в трех законченных смыслах, одновременно и сразу. Таким образом по математической формуле среднего значения перевес будет в сторону: что это более как возможно! А древние технологии работают по быстрее чем подключенная библиотека и получается невероятная скорость, +экономия на серверных ресурсах, потому что скрипт выполняется без бэкенда на стороне устройства.</p> <span style='background:black;color:yellow;width:900px;max-width:100%;font-size:37px;text-align:center;text-shadow:1px 1px 1px white;'>Ибо это яваскрипт. О_о!</span>
 
         </div>
+
+        <script>
+      window.addEventListener('scroll',()=>{
+        if(scrollY>=100){
+          if(document.querySelector('.burg')){
+            console.log('document.querySelector(.burg)');
+          }else{
+            let bat;
+            bat=document.createElement('div');
+            document.body.append(bat);
+            bat.style.cssText=`
+            background:yellow !important;
+            position:fixed;
+            right:7%;
+            top:5%;
+            width:70px;
+            height:70px;
+            border-radius:50%;
+            border:3px solid black;
+            font-size:55px;
+            `;
+            console.log('scrollY>100');
+            bat.classList.add('burg');
+            bat.innerHTML="🍔";
+          }
+
+        }else if(scrollY<100){
+          console.log('ScrollY<100');
+          // bat.classList.remove();
+          document.querySelector('.burg').remove('.burg');
+
+          // bat.style.cssText=`
+          // display:none;
+          // `;
+          // document.querySelector('.burg').classList.remove('burg');
+
+        }else{
+            console.log("nu_neznan");
+          }
+      });
+        </script>
+        <link rel="stylesheet" href="https://nasobe.ru/menu/style-menu.css">
+<script src="https://nasobe.ru/menu/script-menu.js"></script>
       </article>
       </main>
   </body>
