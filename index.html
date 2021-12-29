@@ -396,7 +396,7 @@ let put= `/var/www/html/menu/menu.html`;
 let put2=`menu/menu.html`;
 function run(){
 var xhr = new XMLHttpRequest();
-xhr.open("GET", `${put2}`, true);
+xhr.open("GET", `${put}`, true);
 xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
 if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 document.getElementById("menu").innerHTML = this.responseText;
