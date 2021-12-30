@@ -267,7 +267,7 @@
           <div class='boxMenu'>
             <nav><span class="ButtonBox"><a href="#contextka">Контекстка</a></span><span class="ButtonBox"><a href="#prim">Примеры</a></span><span class="ButtonBox"><a href="#JSgallery">html coder</a></span></nav>
           <h1>
-            <img itemprop="logo" src="images/logo.png" alt="веб мастерская имени Барона Сайтоверстаузена" style="max-width:75px; float:right;margin-right:5%;">
+            <img itemprop="logo" src="https://nasobe.ru/images/logo.png" alt="веб мастерская имени Барона Сайтоверстаузена" style="max-width:75px; float:right;margin-right:5%;">
             <p style='display:flex;flex-direction:column;'><span class='font-sizeH1'>Веб мастерская</span><span style='font-size:18px;'>имени Барона Сайтоверстаузена</span></p>
           </h1>
         </div>
@@ -331,31 +331,33 @@
           <picture>
             <img src='https://nasobe.ru/images/4974.JPG' alt='vermasterskaya'>
           </picture>
-          <section>
+
             <style>
-            *{
-              margin:0;
-            }
             .boxFirst{
-              display:flex;justify-content:space-around;align-items:space-around;width:900px;max-width:100%;
+              display:flex;
+              justify-content:space-around;
+              align-items:center;
+              width:900px;
+              max-width: 100%;
             }
             :root{
               --heightButton:37px;
+              --widthButton:170px;
             }
             .boxFirst .buttonLeft{
-              display:flex;justify-content:center;align-items:center;background:black;border-radius:10px;width:350px;max-width:100%;height:var(--heightButton);color:yellow;
+              display:flex;justify-content:center;align-items:center;background:black;border-radius:10px;width:var(--widthButton);max-width:100%;height:var(--heightButton);color:yellow;
             }
             .boxFirst .buttonLeft:hover{background:gray;}
-            .boxFirst .buttonRight{
-              display:flex;justify-content:center;align-items:center;background:black;border-radius:10px;width:350px;max-width:100%;height:var(--heightButton);color:yellow;
+            .buttonRight{
+              display:flex;justify-content:center;align-items:center;background:black;border-radius:10px;width:var(--widthButton);max-width:100%;height:var(--heightButton);color:yellow;
             }
-            .boxFirst .buttonRight:hover{background:gray;}
+            .buttonRight:hover{background:gray;}
             </style>
             <div class='boxFirst'>
               <p class='buttonLeft'><span style="font-size:35px;">👈</span></p>
               <p class='buttonRight'><span style="font-size:35px">👉</span></p>
             </div>
-          </section>
+
           <strong>js gallery</strong>
             <p>На простом js для динамической модификации тега пикчер и подстановки даже супер легкого формата WEBP если такое поддерживает браузер. Фотографии подгружаются по путям указанных в json который подключается к js gallery. Возможна динамическая генерация: alt, title. И практически бесконечное количество фотографий записанных в json.</p>
             <br>
@@ -428,7 +430,7 @@ let put1= `https://nasobe.ru/menu/menu.html`;
 let put2=`menu/menu.html`;
 function run(){
 var xhr = new XMLHttpRequest();
-xhr.open("GET", `${put}`, true);
+xhr.open("GET", `${put1}`, true);
 xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
 if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
 document.getElementById("menu").innerHTML = this.responseText;
@@ -445,6 +447,7 @@ xhr.send();
       </article>
       </main>
       <div id="menu"></div>
+
 
   </body>
 </html>
